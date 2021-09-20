@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 
+import styles from "./notFound.module.scss";
+
 const NotFound = () => {
   return (
-    <div>
-      <h1>404 - Not Found</h1>
+    <div className={styles.nfContainer}>
+      <p className={styles.message}>404 &nbsp;|&nbsp; Not Found</p>
       <Link to="/">Home</Link>
     </div>
   );

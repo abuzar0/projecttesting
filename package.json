@@ -1,6 +1,10 @@
 {
-  "name": "store",
+  "name": "react-boilerplate",
   "version": "0.1.0",
+  "author": {
+    "name": "Asad",
+    "url": "https://github.com/iasadsohail/"
+  },
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",

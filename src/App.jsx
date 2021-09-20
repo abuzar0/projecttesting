@@ -8,6 +8,8 @@ import NotFound from "./modules/components/notFound/NotFound";
 
 import routes from "./modules/utils/routes";
 
+import "./app.scss";
+
 const App = () => (
   <ErrorBoundary>
     <BrowserRouter>

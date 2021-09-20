@@ -2,16 +2,26 @@ import { NavLink } from "react-router-dom";
 
 import routes from "../../utils/routes";
 
+import styles from "./navbar.module.scss";
+
 const Navbar = () => {
   return (
-    <div>
+    <div className={styles.navContainer}>
       <nav>
-        {routes.map(({ dest, name }, key) => (
-          <NavLink key={key} to={dest}>
-            {name}
+        <h1 className={styles.navBrand}>App</h1>
+        <div className={styles.navLinks}>
+          {routes.map(
+            ({ dest, name }, key) =>
+              name && (
+                <NavLink key={key} to={dest}>
+                  {name}
+                </NavLink>
+              )
+          )}
+          <NavLink to="unknown" exact>
+            404
           </NavLink>
-        ))}
-        <NavLink to="unknown">404</NavLink>
+        </div>
       </nav>
     </div>
   );

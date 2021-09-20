@@ -1,0 +1,25 @@
+@import "./variables";
+
+// common styles to all the pages will go here
+.container {
+  min-height: 100vh;
+  width: 100%;
+
+  background: $secondary;
+  color: $primary;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-dark {
+  background: $primary;
+  color: $secondary;
+}
+
+// all the css from the pages will be imported here individually
+
+@use "./modules/pages/home/home";
+@use "./modules/pages/about/about";
