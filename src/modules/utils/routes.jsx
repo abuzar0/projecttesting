@@ -4,7 +4,7 @@ const Home = lazy(() => import("../pages/home/Home"));
 const About = lazy(() => import("../pages/about/About"));
 
 const routes = [
-  { dest: "/", name: "Home", page: Home },
+  { dest: "/", page: Home },
   { dest: "/about", name: "About", page: About },
 ];
 

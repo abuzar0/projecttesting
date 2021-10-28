@@ -1,9 +1,9 @@
 {
-  "name": "react-boilerplate",
+  "name": "MovieZ",
   "version": "0.1.0",
   "author": {
-    "name": "Asad",
-    "url": "https://github.com/iasadsohail/"
+    "name": "Abuzar",
+    "url": "https://github.com/abuzar0/"
   },
   "private": true,
   "dependencies": {

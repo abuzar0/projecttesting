@@ -1,10 +1,10 @@
 import React from "react";
+import './about.scss';
 
 const About = () => {
   return (
-    <div className="container container-dark">
-      <h1>About</h1>
-      <p>This is a dark container.</p>
+    <div className="container about">
+      <h1 className="hua">About</h1>
     </div>
   );
 };

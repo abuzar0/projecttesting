@@ -1,6 +1,5 @@
 @import "./variables";
 
-// common styles to all the pages will go here
 .container {
   min-height: 100vh;
   width: 100%;
@@ -9,17 +8,28 @@
   color: $primary;
 
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 
-.container-dark {
-  background: $primary;
-  color: $secondary;
+.hua {
+  position: relative;
+  cursor: default;
 }
 
-// all the css from the pages will be imported here individually
+.hua:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: $primary;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
 
-@use "./modules/pages/home/home";
-@use "./modules/pages/about/about";
+.hua:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
