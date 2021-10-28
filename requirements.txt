@@ -1,0 +1,20 @@
+1 home
+
+2 trending
+
+    > sort by rating
+
+3 latest
+
+    > sort by release date
+
+4 individual
+
+    > movie details
+
+5 users
+
+    > signup
+    > login
+    > forgot password
+    > favorites
